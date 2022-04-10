@@ -1,0 +1,29 @@
+The number of training images = 8
+W0410 20:56:53.846483 30068 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0410 20:56:53.850978 30068 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+[Epoch 50, iter: 3] acc: 0.97250, lr: 0.00300, loss: 12.97460, avg_reader_cost: 0.00013 sec, avg_batch_cost: 0.00074 sec, avg_samples: 800.0, avg_ips: 1085552.63669 images/sec.
+[Epoch 50, iter: 7] acc: 0.97500, lr: 0.00300, loss: 13.06705, avg_reader_cost: 0.00012 sec, avg_batch_cost: 0.00054 sec, avg_samples: 1600.0, avg_ips: 2940791.58633 images/sec.
+[Epoch 100, iter: 3] acc: 0.98875, lr: 0.00300, loss: 11.41495, avg_reader_cost: 0.00014 sec, avg_batch_cost: 0.00082 sec, avg_samples: 800.0, avg_ips: 972874.22441 images/sec.
+[Epoch 100, iter: 7] acc: 0.98375, lr: 0.00300, loss: 11.45024, avg_reader_cost: 0.00014 sec, avg_batch_cost: 0.00062 sec, avg_samples: 1600.0, avg_ips: 2561407.02290 images/sec.
+epoch: 100 ,test_loss:11.64425, test_acc: 0.9825
+[Epoch 150, iter: 3] acc: 0.98500, lr: 0.00300, loss: 10.83840, avg_reader_cost: 0.00014 sec, avg_batch_cost: 0.00079 sec, avg_samples: 800.0, avg_ips: 1010980.17475 images/sec.
+[Epoch 150, iter: 7] acc: 0.98750, lr: 0.00300, loss: 10.57193, avg_reader_cost: 0.00015 sec, avg_batch_cost: 0.00065 sec, avg_samples: 1600.0, avg_ips: 2449228.61314 images/sec.
+[Epoch 200, iter: 3] acc: 0.98750, lr: 0.00300, loss: 10.05518, avg_reader_cost: 0.00013 sec, avg_batch_cost: 0.00077 sec, avg_samples: 800.0, avg_ips: 1038836.90402 images/sec.
+[Epoch 200, iter: 7] acc: 0.98875, lr: 0.00300, loss: 10.26580, avg_reader_cost: 0.00013 sec, avg_batch_cost: 0.00059 sec, avg_samples: 1600.0, avg_ips: 2711469.25253 images/sec.
+epoch: 200 ,test_loss:10.51799, test_acc: 0.9825
+[Epoch 250, iter: 3] acc: 0.99000, lr: 0.00300, loss: 9.51728, avg_reader_cost: 0.00014 sec, avg_batch_cost: 0.00086 sec, avg_samples: 800.0, avg_ips: 934924.26860 images/sec.
+[Epoch 250, iter: 7] acc: 0.98875, lr: 0.00300, loss: 9.52120, avg_reader_cost: 0.00016 sec, avg_batch_cost: 0.00078 sec, avg_samples: 1600.0, avg_ips: 2061083.04668 images/sec.
+[Epoch 300, iter: 3] acc: 0.99000, lr: 0.00300, loss: 8.99130, avg_reader_cost: 0.00015 sec, avg_batch_cost: 0.00091 sec, avg_samples: 800.0, avg_ips: 882546.87007 images/sec.
+[Epoch 300, iter: 7] acc: 0.99000, lr: 0.00300, loss: 9.22736, avg_reader_cost: 0.00016 sec, avg_batch_cost: 0.00082 sec, avg_samples: 1600.0, avg_ips: 1959382.89051 images/sec.
+epoch: 300 ,test_loss:10.00660, test_acc: 0.9825
+[Epoch 350, iter: 3] acc: 0.98875, lr: 0.00300, loss: 8.77700, avg_reader_cost: 0.00014 sec, avg_batch_cost: 0.00085 sec, avg_samples: 800.0, avg_ips: 944929.09040 images/sec.
+[Epoch 350, iter: 7] acc: 0.99125, lr: 0.00300, loss: 9.04363, avg_reader_cost: 0.00015 sec, avg_batch_cost: 0.00076 sec, avg_samples: 1600.0, avg_ips: 2094533.83271 images/sec.
+[Epoch 400, iter: 3] acc: 0.99125, lr: 0.00300, loss: 9.03489, avg_reader_cost: 0.00014 sec, avg_batch_cost: 0.00084 sec, avg_samples: 800.0, avg_ips: 949474.58970 images/sec.
+[Epoch 400, iter: 7] acc: 0.99187, lr: 0.00300, loss: 9.06323, avg_reader_cost: 0.00015 sec, avg_batch_cost: 0.00073 sec, avg_samples: 1600.0, avg_ips: 2187381.48631 images/sec.
+epoch: 400 ,test_loss:9.74508, test_acc: 0.9825
+[Epoch 450, iter: 3] acc: 0.99125, lr: 0.00300, loss: 8.55426, avg_reader_cost: 0.00011 sec, avg_batch_cost: 0.00070 sec, avg_samples: 800.0, avg_ips: 1140143.79884 images/sec.
+[Epoch 450, iter: 7] acc: 0.99250, lr: 0.00300, loss: 8.42972, avg_reader_cost: 0.00015 sec, avg_batch_cost: 0.00061 sec, avg_samples: 1600.0, avg_ips: 2617350.39002 images/sec.
+[Epoch 500, iter: 3] acc: 0.99000, lr: 0.00300, loss: 8.92419, avg_reader_cost: 0.00013 sec, avg_batch_cost: 0.00075 sec, avg_samples: 800.0, avg_ips: 1062858.15648 images/sec.
+[Epoch 500, iter: 7] acc: 0.99313, lr: 0.00300, loss: 8.60470, avg_reader_cost: 0.00019 sec, avg_batch_cost: 0.00083 sec, avg_samples: 1600.0, avg_ips: 1919041.00658 images/sec.
+epoch: 500 ,test_loss:9.60446, test_acc: 0.9850
+====> acc: 0.9850
