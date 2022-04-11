@@ -68,6 +68,7 @@ if __name__ == "__main__":
 
     #model.cuda()
     paddle.device.set_device("gpu:0")
+    
     def train(epoch):
         model.train()
         # training log
@@ -118,9 +119,11 @@ if __name__ == "__main__":
                 # just log on 1st device
                 if paddle.distributed.get_rank() <= 0:
                     print(msg)
+      
             if epoch%100==0 and batch_idx > 0 and (batch_idx+1) % 8 == 0:
                 test_loss, acc1 = test(epoch)
                 print('epoch:',epoch,',test_loss:{:.5f},'.format(test_loss),'test_acc: {:.4f}'.format(acc1))
+  
 
             sys.stdout.flush()
             train_reader_cost = 0.0
@@ -130,7 +133,6 @@ if __name__ == "__main__":
             batch_past = 0
 
             reader_start = time.time()
-
 
     def test(epoch):
         model.eval()
@@ -156,6 +158,15 @@ if __name__ == "__main__":
 
     for epoch in range(1, args.epochs + 1):
         train(epoch)
+
+    paddle.save(model.state_dict(), "output/model_best/model_last.pdparams")
+    paddle.save(optimizer.state_dict(), "output/model_best/model_last.pdopt")        
+
+    layer_state_dict = paddle.load("output/model_best/model_last.pdparams")
+    opt_state_dict = paddle.load("output/model_best/model_last.pdopt")
+
+    model.set_state_dict(layer_state_dict)
+    optimizer.set_state_dict(opt_state_dict) 
 
     test_loss, acc = test(epoch)
     print('====> acc: {:.4f}'.format(acc))
