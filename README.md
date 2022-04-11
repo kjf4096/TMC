@@ -171,3 +171,4 @@ W0411 10:37:17.389173  7620 device_context.cc:465] device: 0, cuDNN Version: 7.6
 本项目的发布受[Apache 2.0 license](./LICENSE)许可认证。
 
 ## 8. 参考链接与文献
+[Trusted Multi-View Classification](https://arxiv.org/abs/2102.02051)
